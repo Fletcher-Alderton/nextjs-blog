@@ -1,8 +1,8 @@
 [
     {
       "link": "/page1",
-      "title": "Page 1",
-      "description": "A test page",
+      "title": "How to Install Immich on Portainer using NFS Shares",
+      "description": "A guide for installing Immich services on Portainer using NFS storage to keep your photos safe",
       "thumbnail": "/content/page1/attachments/thumbnail.jpeg"
     },
     {
