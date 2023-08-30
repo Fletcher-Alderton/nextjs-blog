@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 2.5px;
+  text-align: left;
+}
+
+.description {
+  color: #666;
+}

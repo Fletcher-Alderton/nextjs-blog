@@ -11,31 +11,31 @@ In this guide, we'll walk you through the process of installing Immich on Portai
 
 ### Steps
 
-1. **Log in to Portainer**:
+#### Log in to Portainer
 
    Log in to your Portainer dashboard.
    
-1. **Create your new volumes**
+#### Create your new volumes
 
- 1. Your will need to have your nfs shares and necessary folders already setup.
-	 1. If not I have a guide to help you [here]()
-	 2. You will need the folders
-		 - `/your-nf—share/immich/data` for data storage
+ Your will need to have your nfs shares and necessary folders already setup.
+	 If not I have a guide to help you [here]()
+	 You will need the folders
+		- `/your-nf—share/immich/data` for data storage
 		- `/your-nfs-share/immich/redis` for Redis storage
 		- `/your-nfs—share/immich/tsdata` for Typesense storage
 		- `/your-nfs—share/immich/database` for PostgreSQL storage
- 1. Go to the “Volumes” section in Portainer
- 2. Create a new volume
- 3. Click the NFS toggle and input the necessary data
+  Go to the “Volumes” section in Portainer
+  Create a new volume
+  Click the NFS toggle and input the necessary data
 	 1. The ip is the ip address of your server
 	 2. The location should be the complete location to your nfs share folders
  
-3. **Create a New Stack**:
+#### Create a New Stack
 
    1. Navigate to the "Stacks" section in Portainer.
    2. Click "Add Stack" to create a new stack. This is where we'll define the Immich services.
 
-2. **Configure Stack Details**:
+#### Configure Stack Details
 
    1. Set the name for the stack, e.g., "immich-stack".
    2. In the "Web editor" section, paste the following Docker Compose content. This content includes the services and volume mappings required for Immich:
@@ -149,11 +149,12 @@ volumes:
     external: true
 ```
 
-4. **Define Environment Variables**:
+##### Define Environment Variables
 
    1. In the same "Web editor" section, scroll down to the bottom and click "Advanced view."
    3. Copy and paste the environment variables from your provided `.env` file into this new `stack.env` file.
    4. Click “Advanced view” again and input the necessary changes such as the names of the volumes you created.
+
 ```env
 DB_HOSTNAME=immich_postgres
 DB_USERNAME=postgres
@@ -171,7 +172,7 @@ IMMICH_SERVER_URL=http://immich-server:3001
 IMMICH_MACHINE_LEARNING_URL=http://immich-machine-learning:3003
 ```
 
-2. **Deploy the Stack**:
+##### Deploy the Stack
 
    Scroll  to the bottom of the "Web editor" section and click "Deploy the stack." Portainer will use the provided Docker Compose file and environment variables to deploy the Immich services.
    

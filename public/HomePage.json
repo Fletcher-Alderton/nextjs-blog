@@ -1,0 +1,18 @@
+[
+    {
+      "link": "/page1",
+      "title": "Page 1",
+      "description": "A test page",
+      "thumbnail": "/content/page1/attachments/thumbnail.jpeg"
+    },
+    {
+      "link": "/page2",
+      "title": "Page 2",
+      "description": "Another test page",
+      "thumbnail": "/content/page2/attachments/thumbnail"
+    }
+
+  ]
+  
+
+  
