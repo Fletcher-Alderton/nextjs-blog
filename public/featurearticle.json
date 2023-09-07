@@ -4,15 +4,7 @@
       "title": "How to Install Immich on Portainer using NFS Shares",
       "description": "A guide for installing Immich services on Portainer using NFS storage to keep your photos safe",
       "thumbnail": "/content/page1/attachments/thumbnail.jpeg"
-    },
-    {
-      "link": "/page2",
-      "title": "Page 2",
-      "description": "Another test page asdflihe eiursge dasofiuer sdsalfuyer",
-      "thumbnail": "/content/page1/attachments/thumbnail.jpeg"
     }
 
   ]
-  
-
   

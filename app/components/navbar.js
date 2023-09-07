@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import '../components/header.css'
+import '../components/navbar.css'
 
-export default function Header() {
+export default function Navbar() {
   return (
     <header>
       <nav className="nav">
