@@ -23,37 +23,40 @@ export default function HomePage() {
       </div>
       {/* Horizontal Line */}
       <div className='hr-line'></div>
-      {/* Feature Articles */}
-      <div className='feature-container'>
-        {featurearticle.map((entry, index) => (
-          <a href={entry.link} key={index} className='feature-link'>
-            <div className='feature-entry'>
-              <div className='feature-thumbnail'>
-                <img src={entry.thumbnail} alt={`${entry.title} Thumbnail`} />
-              </div>
-              <div className='feature-details'>
-                <h2 className='feature-title'>{entry.title}</h2>
-                <p className='feature-description'>{entry.description}</p>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
       {/* Articles */}
-      <div className='normal-container'>
-        {data.map((entry, index) => (
-          <a href={entry.link} key={index} className='normal-link'>
-            <div className='normal-entry'>
-              <div className='normal-thumbnail'>
-                <img src={entry.thumbnail} alt={`${entry.title} Thumbnail`} />
+      <div class="container">
+        <div className='feature-container'>
+          {/* Feature Articles */}
+          {featurearticle.map((entry, index) => (
+            <a href={entry.link} key={index} className='feature-link'>
+              <div className='feature-entry'>
+                <div className='feature-thumbnail'>
+                  <img src={entry.thumbnail} alt={`${entry.title} Thumbnail`} />
+                </div>
+                <div className='feature-details'>
+                  <h2 className='feature-title'>{entry.title}</h2>
+                  <p className='feature-description'>{entry.description}</p>
+                </div>
               </div>
-              <div className='normal-details'>
-                <h2 className='normal-title'>{entry.title}</h2>
-                <p className='normal-description'>{entry.description}</p>
+            </a>
+          ))}
+        </div>
+        {/* Normal Articles */}
+        <div className='normal-container'>
+          {data.map((entry, index) => (
+            <a href={entry.link} key={index} className='normal-link'>
+              <div className='normal-entry'>
+                <div className='normal-thumbnail'>
+                  <img src={entry.thumbnail} alt={`${entry.title} Thumbnail`} />
+                </div>
+                <div className='normal-details'>
+                  <h2 className='normal-title'>{entry.title}</h2>
+                  <p className='normal-description'>{entry.description}</p>
+                </div>
               </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          ))}
+        </div>
       </div>
     </>
   );

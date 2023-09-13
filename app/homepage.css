@@ -1,11 +1,15 @@
 /* Normal Container */
 .normal-container {
-  margin-top: 24px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Updated to column */
   gap: 20px;
   padding: 0 20px;
+  margin-left: 85%;
+  width: 100%; /* Adjust the width as needed */
+  justify-content: flex-end; /* Center elements to the right */
+  margin-top: -63%;
 }
+
 
 /* Link Styles */
 .normal-link {
@@ -17,14 +21,14 @@
 .normal-entry {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 900px;
   overflow: hidden;
 }
 
 /* Thumbnail Styles */
 .normal-thumbnail img {
   overflow: hidden;
-  max-height: 400px;
+  max-height: 500px;
   width: 100%;
 }
 
